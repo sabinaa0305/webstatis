@@ -1,0 +1,53 @@
+body  {
+     background-image: url(https://cdn.pixabay.com/photo/2018/03/18/15/26/villa-3237114_640.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.container {
+     width: 800px;
+     margin: 20px auto;
+     background-color: darkgrey;
+     border: 5px dotted rgb(95, 80, 80)
+}
+
+h1   {
+      background-color: rgb(61, 46, 46);
+      color :khaki;
+      text-align: center;
+}
+
+h2   {
+      background-color: rgb(95, 57, 57);
+      color :lightgrey;
+      text-align: center;
+}
+
+p    {
+     padding: 20px;
+     text-align: justify;
+}
+
+#pengantar     {
+     background-color: sienna;
+     padding : 50px;
+}
+
+.content1 {
+     background-color: darkslategray;
+}
+
+.content3 {
+     background-color: slategray;
+}
+
+.content5 {
+     background-color: grey;
+}
+
+
+/* tulisan bold untuk horor*/
+.tulisanbold {
+     font-weight: bold;
+}
