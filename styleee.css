@@ -1,0 +1,637 @@
+:root {
+    --primary: #86bbda;
+    --bg: #d87777;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff; 
+}
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #ec7373;
+    border-bottom: 1px #d87777 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+  
+  .navbar .navbar-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Lobster', sans-serif;
+}
+  
+  .navbar .navbar-logo span {
+    color: var(--primary);
+}
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+  
+.navbar .navbar-nav a:after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+  #hamburger-menu {
+    display: none;
+}
+  
+
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('images/jajanan\ pasar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+  
+  .hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0%;
+    background: linear-gradient(0deg, var(--bg) 8%,rgba(194, 109, 109, 0) 50%);
+}
+  
+  .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+  
+  .hero .content h1 {
+    font-size: 5em;
+    font-family: 'Lobster', sans-serif;
+    font-style: italic;
+    color: #5c0d0d;
+    text-shadow: 1px 1px 3px rgba(100, 143, 185, 0.005);
+    line-height: 1.2;
+}
+  
+  .hero .content h1 span {
+    color: var(--primary);
+}
+  
+  .hero .content p {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    color: rgb(51, 19, 6);
+}
+  
+  .hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+/* About section */
+.about {
+    padding: 8rem 7% 1.4rem;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 900px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Tampilan DM Serif', serif;
+    font-style: italic;;
+    margin-bottom: 3rem;
+    color: #5a91b1;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  color: #5a91b1;
+}
+
+.about p {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #fff;
+}
+
+  
+/* Menu Section */
+.menu {
+  padding: 12rem 7% 1.4rem;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  min-height: 900px;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Tampilan DM Serif', serif;
+  font-style: italic;
+}
+
+.menu h2 span {
+  color: var(--primary);
+}
+
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bg);
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu .row .menu-card-img img {
+    border-radius: 80%;
+    width: 80%;
+    text-align: center;
+    border: #a33939 1px solid;
+}
+
+.row h4 {
+  font-size: 2rem;
+  color: #c05e5e;
+  margin-top: 0.1rem;
+}
+
+.row p {
+  font-size: 1.5rem;
+  color: #d87777;
+  margin-bottom: 0.1rem;
+}
+
+.row .title {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+/* Registrasi section */
+.registration {
+  padding: 10rem 7% 1.4rem;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 900px;
+}
+
+.registration h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: 'Tampilan DM Serif', serif;
+  font-style: italic;
+}
+
+.registration h2 span {
+  color: var(--primary);
+}
+
+.registration .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.registration .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #fff;
+  padding-left: 2rem;
+}
+
+.registration .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+}
+
+.registration .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem ;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+
+/* Contact section */
+.contact {
+  padding: 10rem 7% 1.4rem;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: 'Tampilan DM Serif', serif;
+  font-style: italic;
+}
+
+.contact h2 span {
+  color: var(--primary);
+}
+
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: darksalmon;
+  flex-wrap: wrap;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #fff;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem ;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 0.100em;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  text-align: center;
+}
+
+/* artikel section */
+.artikelsaya {
+  padding: 8rem 7% 1rem;
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight:700;
+  margin-top: 1rem;
+  text-align: center;
+  min-height: 1000px;
+}
+
+.artikelsaya h2 {
+  padding: 1.4rem 7%;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Tampilan DM Serif', serif;
+  color: #86bbda;
+}
+
+.artikelsaya p{
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+/* sidebar section*/
+.icons-sidebar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.sidebar {
+  height: 300px;
+  width: 150px;
+  position: fixed;
+  z-index: 9999;
+  display: block;
+  top: 75px;
+  bottom: 0px;
+  right: 0;
+  background: #d87777 ;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-left: 11px;
+  justify-content: center;
+  border-radius: 25px 0 0 25px;
+  margin-right: 0px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  box-shadow: inset 0 4px 0 0 white, inset 4px 0 0 0 white,
+    inset 0 -4px 0 0 white;
+  font-family: "poppins";
+}
+
+.sidebar h2 {
+  font-size: 2.5rem;
+  font-family: 'Lobster', sans-serif;
+}
+
+.sidebar p {
+  font-size: 1rem;
+}
+
+.sidebar span {
+  color: var(--primary);
+}
+.sidebar a {
+  padding: 1px 5px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "josefin", sans-serif;
+  color: white;
+  display: block;
+}
+.sidebar a:hover {
+  color: var(--primary);
+}
+
+/* galeri section */
+.galeri {
+  padding: 10rem 7% 1rem;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1000px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #a33939;
+  font-size: 1.6rem;
+  font-family: 'Tampilan DM Serif', serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #a33939;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Media Queris */
+  
+  /* Laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+}
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #4489b1;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+}
+  
+    .navbar .navbar-nav.acttive {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+  .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+}
+  
+  /* Mobile Phone */
+ @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+}
